@@ -8,17 +8,16 @@ Class EmailUtil {
       $mail->SMTPDebug = 3;                               // Enable verbose debug output
 
       $mail->isSMTP();                                      // Set mailer to use SMTP
-      $mail->Host = 'smtp.mailgun.org';  // Specify main and backup SMTP servers
+      $mail->Host = 'mailserver';  // Specify main and backup SMTP servers
       $mail->SMTPAuth = true;                               // Enable SMTP authentication
-      $mail->Username = 'developer@apps.microad.co.id';                 // SMTP username
-      $mail->Password = 'kurakuraninja';                           // SMTP password
+      $mail->Username = 'developer@domain.com';                 // SMTP username
+      $mail->Password = 'pass';                           // SMTP password
       $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
       $mail->Port = 587;                                    // TCP port to connect to
 
       $mail->From = 'developer@apps.microad.co.id';
       $mail->FromName = 'Developer';
-      $mail->addAddress('developer@apps.microad.co.id', 'Developer apps.microad.co.id');     // Add a recipient
-      $mail->addAddress('msofyancs@gmail.com');               // Name is optional
+      $mail->addAddress('yourmail');               // Name is optional
 
       $mail->WordWrap = 50;                                 // Set word wrap to 50 characters
       $mail->isHTML(true);                                  // Set email format to HTML
