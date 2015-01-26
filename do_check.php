@@ -1,17 +1,26 @@
 <?php
+   require_once __DIR__ . '/server.php';
+   //server array
+   $hosts = array(
+      'apps.microad.co.id',
+      'git.microad.co.id',
+      'eneloop.id',
+      'panasonic-ht.microad.co.id',
+      'ocbc-umi.microad.co.id',
+      'converse.id',
+      'eneloop.uk.com',
+      'eneloop.in',
+      'goon.microad.co.id',
+      'basiqk.com',
+      'development.microad.co.id',
+      'dev.microad.co.id',
+      'bandung.microad.co.id'
+   );
 
-//declare variable
-$host = 'bandung.microad.co.id';
-$ports = array(22,80,8585);
-foreach ($ports as $port) {
-	$connection = @fsockopen($host,$port);
-	if (is_resource($connection)) {
-		echo '<h2>'. $host. ':' . $port . ' ' . '('. getservbyport($port,'tcp'). ') is open.</h2>' . "\n";
-		fclose($connection);
-	}
-	else {
-		echo '<h2>' . $host . ':' .$port . ' is not responding . </h2>' . "\n";
-	}
-}
+   foreach($hosts as $host){
+      var_dump($host);
+      Server::check($host);
+      sleep(60);
+   }
 
-?>
+
