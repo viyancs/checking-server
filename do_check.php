@@ -3,7 +3,7 @@
    //server array
    $hosts = array(
       '203.190.241.130:80,22:"Development Server"',
-      '203.190.243.34:80,22:"Production Microsite"',
+      '203.190.243.34:80,22:"Production Server"',
       '192.168.1.225:5432:"Database Postgress Production"',
       '192.168.1.136:6380:"Redis Server"',
       
