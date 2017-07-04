@@ -15,7 +15,7 @@ Class EmailUtil {
       $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
       $mail->Port = 587;                                    // TCP port to connect to
 
-      $mail->From = 'developer@apps.microad.co.id';
+      $mail->From = 'developer@domain.co.id';
       $mail->FromName = 'Developer';
       $mail->addAddress('yourmail');               // Name is optional
 
