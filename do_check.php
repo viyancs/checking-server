@@ -2,10 +2,10 @@
    require_once __DIR__ . '/server.php';
    //server array
    $hosts = array(
-      '203.190.241.130:80,22:"Development Server"',
-      '203.190.243.34:80,22:"Production Server"',
-      '192.168.1.225:5432:"Database Postgress Production"',
-      '192.168.1.136:6380:"Redis Server"',
+      '1.1.1.1:80,22:"Development Server"',
+      '1.1.1.1:80,22:"Production Server"',
+      '1.1.1.1:5432:"Database Postgress Production"',
+      '1.1.1.1:6380:"Redis Server"',
       
    );
 
